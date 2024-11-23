@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 1.183 s <<< FAILURE! - in TestSuite
+SwagLabs.Test_Case.Login_Test.TC02_LoginFailureTest  Time elapsed: 0.304 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'ErText2' is required by @Test on method TC02_LoginFailureTest but has not been marked @Optional or defined
+in /home/sa/Desktop/Functional_Testing_SwagLabs_Project/sanity.xml
+
+SwagLabs.Test_Case.Login_Test.TC03_LockedUserTest  Time elapsed: 0.306 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'ErText1' is required by @Test on method TC03_LockedUserTest but has not been marked @Optional or defined
+in /home/sa/Desktop/Functional_Testing_SwagLabs_Project/sanity.xml
+
+SwagLabs.Test_Case.Login_Test.InitialSetup  Time elapsed: 1.042 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 400. Message: binary is not a Firefox executable 
+Host info: host: 'sa-OptiPlex', ip: '127.0.1.1'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.8.0-49-generic', java.version: '21.0.5'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {binary: /usr/bin/firefox}}]}]
+

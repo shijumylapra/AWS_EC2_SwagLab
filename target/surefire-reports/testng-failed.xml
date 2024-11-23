@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sanity Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="E:/Java_TestNG/TestNG/src/test/java/TestNGProject(failed)" verbose="0">
+    <parameter name="Para1" value="param1@gmail.com"/>
+    <parameter name="Para2" value="pass@123"/>
+    <groups>
+      <run>
+        <include name="products"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SwagLabs.Test_Case.Login_Test">
+        <methods>
+          <include name="TC03_LockedUserTest"/>
+          <include name="InitialSetup"/>
+          <include name="TC01_LoginSuccessTest"/>
+          <include name="TC02_LoginFailureTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- SwagLabs.Test_Case.Login_Test -->
+    </classes>
+  </test> <!-- E:/Java_TestNG/TestNG/src/test/java/TestNGProject(failed) -->
+</suite> <!-- Failed suite [Sanity Test Suite] -->

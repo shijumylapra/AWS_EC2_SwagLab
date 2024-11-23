@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/Swag Labs Automation/TestNG_SwagLabs">
+        <parameter name="ErText1" value="Epic sadface: Sorry, this user has been locked out."/>
+        <parameter name="ErText2" value="Epic sadface: Username and password do not match any user in this service"/>
+
+        <groups>
+            <run>
+                <include name="products"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="SwagLabs.Test_Case.Login_Test"> </class>
+            <class name="SwagLabs.Test_Case.Home_Test"> </class>
+        </classes>
+    </test>
+</suite>
