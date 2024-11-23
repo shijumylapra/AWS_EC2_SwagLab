@@ -1,1 +1,1 @@
-Swag Labs Automation project using page object model and testNG with Selenium
+Automate eCommerce website and run it on Amazon EC2 Instance 
