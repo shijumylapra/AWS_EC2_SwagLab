@@ -75,7 +75,9 @@
         <configuration>
           <suiteXmlFiles>
              <suiteXmlFile>{suiteXmlFile}</suiteXmlFile>
-            <!-- <suiteXmlFile>sanity.xml</suiteXmlFile> -->
+            <!-- <suiteXmlFile>sanity.xml</suiteXmlFile>
+            mvn clean test -Dsurefire.suiteXmlFiles=sanity.xml -DBrowser=chrome
+            -->
             <!-- mvn clean test -Dsurefire.suiteXmlFiles=sanity.xml
             -->
           </suiteXmlFiles>
@@ -93,3 +95,4 @@
   </build>
 <!--                               ccccccccccccccccccccccccccccccccccc      -->
 </project>
+
