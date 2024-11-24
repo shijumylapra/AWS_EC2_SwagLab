@@ -13,7 +13,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -22,19 +21,10 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Selenium Java Maven dependency
-    https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.21.0</version>
-    </dependency>
-
-    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-    <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>5.7.0</version>
     </dependency>
 
     <dependency>
@@ -43,19 +33,14 @@
       <version>2.15.0</version>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.testng/testng
-    //TestNG Dep
-  -->
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
-      <version>7.7.0</version>
+      <version>6.14.3</version>
       <scope>test</scope>
     </dependency>
-    <!--    Apache POI-->
-    <!--    To read data from excel-->
 
-    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
@@ -68,7 +53,11 @@
       <artifactId>poi-ooxml</artifactId>
       <version>4.1.2</version>
     </dependency>
-
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.6.1</version>
+    </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
     <dependency>
       <groupId>org.apache.poi</groupId>
@@ -76,7 +65,6 @@
       <version>4.1.2</version>
     </dependency>
   </dependencies>
-
 
   <build>
     <plugins>
@@ -86,8 +74,10 @@
         <version>3.0.0-M5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>{suiteXmlFile}</suiteXmlFile>
-<!--             mvn clean test -Dsurefire.suiteXmlFiles=sanity.xml -->
+            <!-- <suiteXmlFile>{suiteXmlFile}</suiteXmlFile> -->
+             <suiteXmlFile>sanity.xml</suiteXmlFile>
+            <!-- mvn clean test -Dsurefire.suiteXmlFiles=sanity.xml
+            -->
           </suiteXmlFiles>
         </configuration>
       </plugin>
@@ -101,6 +91,5 @@
       </plugin>
     </plugins>
   </build>
-
-
+<!--                               ccccccccccccccccccccccccccccccccccc      -->
 </project>

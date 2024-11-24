@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sanity Test Suite">
     <test verbose="2" preserve-order="true" name="E:/Java_TestNG/TestNG/src/test/java/TestNGProject">
-        <parameter name="Para1" value="param1@gmail.com"/>
-        <parameter name="Para2" value="pass@123"/>
+
+        <parameter name="ErText1" value="Epic sadface: Sorry, this user has been locked out."/>
+        <parameter name="ErText2" value="Epic sadface: Username and password do not match any user in this service"/>
+
         <groups>
             <run>
                 <include name="products"/>

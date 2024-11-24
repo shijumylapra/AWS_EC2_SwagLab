@@ -1,20 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 1.183 s <<< FAILURE! - in TestSuite
-SwagLabs.Test_Case.Login_Test.TC02_LoginFailureTest  Time elapsed: 0.304 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Parameter 'ErText2' is required by @Test on method TC02_LoginFailureTest but has not been marked @Optional or defined
-in /home/sa/Desktop/Functional_Testing_SwagLabs_Project/sanity.xml
-
-SwagLabs.Test_Case.Login_Test.TC03_LockedUserTest  Time elapsed: 0.306 s  <<< FAILURE!
-org.testng.TestNGException: 
-
-Parameter 'ErText1' is required by @Test on method TC03_LockedUserTest but has not been marked @Optional or defined
-in /home/sa/Desktop/Functional_Testing_SwagLabs_Project/sanity.xml
-
-SwagLabs.Test_Case.Login_Test.InitialSetup  Time elapsed: 1.042 s  <<< FAILURE!
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 8, Time elapsed: 1.538 s <<< FAILURE! - in TestSuite
+SwagLabs.Test_Case.Login_Test.InitialSetup  Time elapsed: 1.43 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 400. Message: binary is not a Firefox executable 
 Host info: host: 'sa-OptiPlex', ip: '127.0.1.1'
